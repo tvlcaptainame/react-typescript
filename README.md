@@ -102,8 +102,8 @@ npm install @types/enzyme-adapter-react-16 --save-dev
  npx tsc --init
  ```
  
- ```json
- {
+ ```javascript
+ const tsconfig = {
    "compilerOptions": {
      /* Basic Options */
      
