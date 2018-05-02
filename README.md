@@ -93,6 +93,33 @@ npm install @types/enzyme --save-dev
 npm install @types/enzyme-adapter-react-16 --save-dev
 ```
 
+### prettier 적용
+```bash
+npm install -D prettier
+npm install -D tslint-config-prettier
+touch .prettierrc
+
+# .prettierrc
+{
+  "parser"             : "typescript",
+  "singleQuote"        : true,
+  "semi"               : true,
+  "trailingComma"      : "es5",
+  "useTabs"            : false,
+  "tabWidth"           : 2,
+  "printWidth"         : 80,
+  "bracketSpacing"     : true,
+  "jsxBracketSameLine" : false
+}
+
+# tslint.json
+{
+  "extends": [
+    "tslint-config-prettier"
+  ]
+}
+```
+
  
 ## tsconfig.json
  

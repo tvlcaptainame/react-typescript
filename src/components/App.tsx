@@ -2,10 +2,10 @@ import * as React from 'react';
 import Button from 'antd/lib/button';
 import 'antd/lib/button/style/css';
 interface AppProps {
-  message: string,
+  message: string;
 }
 
-export default function({ message }: AppProps ) {
+export default function({ message }: AppProps) {
   return (
     <div>
       <h1>Hello {message}</h1>
@@ -13,4 +13,4 @@ export default function({ message }: AppProps ) {
       <Button disabled>hi</Button>
     </div>
   );
-};
+}
